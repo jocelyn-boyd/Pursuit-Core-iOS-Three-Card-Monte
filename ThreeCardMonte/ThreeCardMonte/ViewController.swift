@@ -15,6 +15,22 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
   }
 
+  @IBOutlet weak var userMessage: UILabel!
+  
+  @IBAction func gamePlay(_ sender: UIButton) {
+    
+    let winningNumber = Int.random(in: 1...3)
+    if sender.tag == winningNumber {
+      print("You win!")
+      print(winningNumber)
+      print(sender.tag)
+    } else {
+      print("Try Again!")
+      print(winningNumber)
+      print(sender.tag)
+    }
+  }
+  
 
 }
 
