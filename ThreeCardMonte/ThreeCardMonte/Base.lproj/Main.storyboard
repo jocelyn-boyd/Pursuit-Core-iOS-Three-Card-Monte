@@ -49,7 +49,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="gamePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jwe-wp-Y7Y"/>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rB1-ey-KdF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLT-zC-H9n">
@@ -64,6 +64,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="leftCard" destination="mSb-u3-MDR" id="hZi-r2-MGF"/>
+                        <outlet property="middleCard" destination="dEa-fp-uH9" id="2gb-5B-txX"/>
+                        <outlet property="rightCard" destination="qMn-8N-wQ1" id="W2t-np-wP4"/>
                         <outlet property="userMessage" destination="ZLT-zC-H9n" id="TRW-5r-SxE"/>
                     </connections>
                 </viewController>
